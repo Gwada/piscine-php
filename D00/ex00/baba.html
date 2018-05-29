@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>B.A.B.A</title>
+		<title>B.A.BA</title>
 		<style>
 			body
 			{
@@ -11,6 +11,7 @@
 			}
 			h1
 			{
+				font-size: 3vw;
 				color: white;
 				text-align: center;
 			}
@@ -18,38 +19,51 @@
 			{
 				width: 99%;
 				max-width: 500px;
+				max-height: 500px;
 				display: block;
-				margin-left: auto;
-				margin-right: auto;
+				margin: auto;
 			}
-			div p
+			#conteneur
 			{
+				display: flex;
+			}
+			.shop
+			{
+				width: 50%;
+				margin: auto;
 				text-align: center;
 			}
 			.copyright
 			{
+				font-size: 1.3vw;
 				font-style: italic;
 				text-align: right;
 				font-family: monospace;
+			}
+			p
+			{
+				font-size: 1.6vw;
+			}
+			hr
+			{
+				clear: both;
 			}
 		</style>
     </head>
 
 	<body>
 		<h1>Titre en blanc centré qui contient au moins un accent.</h1>
-
-		<div style="float: left; width: 50%;">
-			<img src="https://pic.clubic.com/v1/images/1382621/raw?width=500&fit=max&hash=d48afffdf4b171fa63a67212a8c84bda346e3ccf" />
-			<p><a href="https://www.cdiscount.com/">C Discount</a></p>
+		<div id="conteneur">
+			<div class="shop">
+				<img src="https://pic.clubic.com/v1/images/1382621/raw?width=500&fit=max&hash=d48afffdf4b171fa63a67212a8c84bda346e3ccf" />
+				<p><a href="https://www.cdiscount.com/">C Discount</a></p>
+			</div>
+			<div class="shop">
+				<img src="http://www.service-client.fr/wp-content/uploads/2014/09/la-redoute-august-rusud-0.jpg" />
+				<p><a href="https://www.laredoute.fr/">La Redoute</a></p>
+			</div>
 		</div>
-
-		<div style="float: right; width: 50%;">
-			<img src="http://www.service-client.fr/wp-content/uploads/2014/09/la-redoute-august-rusud-0.jpg" />
-			<p><a href="https://www.laredoute.fr/">La Redoute</a></p>
-		</div>
-
-		<hr style="clear: both;" />
-
+		<hr />
 		<p class="copyright">© dlavaury 2018</p>
 	</body>
 </html>

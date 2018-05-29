@@ -1,0 +1,269 @@
+body
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(80, 80, 80); 
+}
+#page
+{
+	width: 1200px;
+	margin: auto;
+}
+header
+{
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+	background-color: rgb(144,144,144);
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+#logo_doft
+{
+	position: relative;
+	left: 5px;
+	top: -11px;
+	width: 27%;
+	display: flex;
+}
+#reload
+{
+	position: relative;
+	left: 301px;
+	top: -75px;
+	width: 15%;
+	display: flex;
+}
+#close
+{
+	position: relative;
+	left: -4px;
+	top: -6px;
+	width: 90%;
+	display: flex;
+}
+#loupe
+{
+	position: relative;
+	left: 480px;
+	top: 17px;
+	width: 16%;
+	display: flex;
+}
+section
+{
+	display: flex;
+	width: 97%;
+	margin: 20px;
+	justify-content: space-around;
+	height: 510px;
+}
+nav
+{
+	width: 10%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+	background-color: rgb(144,144,144);
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+#arrow
+{
+	position: relative;
+	left: 0px;
+	top: 5px;
+	width: 50%;
+}
+#arrow:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+#main
+{
+	position: relative;
+	left: 0px;
+	top: 3px;
+	width: 50%;
+}
+#main:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+#oeil
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+
+	width: 50%;
+}
+#oeil:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+#outil
+{
+	position: relative;
+	left: 0px;
+	top: -7px;
+	width: 50%;
+}
+#outil:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+#chat_icon
+{
+	position: relative;
+	left: 0px;
+	top: -10px;
+	width: 50%;
+}
+#chat_icon:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+article
+{
+	width: 74%;
+	height: 96%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	background-color: rgb(144,144,144);
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+#cluster
+{
+	height: 97%;
+}
+aside
+{
+	width: 10%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    align-items: center;
+	background-color: rgb(144,144,144);
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+#book
+{
+	position: relative;
+	left: 0px;
+	top: 10px;
+	width: 55%;
+	display: flex;
+}
+#book:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+#towel
+{
+	position: relative;
+	left: 0px;
+	top: 20px;
+	width: 50%;
+	display: flex;
+}
+#towel:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+#brick
+{
+	position: relative;
+	left: 0px;
+	top: 25px;
+}
+#brick:hover
+{
+	border: 5px red solid;
+	border-radius: 5px;
+}
+#formulaire
+{
+	position: relative;
+	left: -13px;
+	top: -100px;
+	height: 120px;
+	width: 415px;
+	background-color: rgb(140, 253, 142);
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+#Nouveau
+{
+	position: relative;
+	left: 10px;
+	top: -13px;
+}
+#Repondre
+{
+	position: relative;
+	left: 14px;
+	top: -13px;
+	border: none;
+	border: 1px silver solid;
+}
+#text
+{
+	position: relative;
+	left: 10px;
+	top: 0px;
+	font-size: 13px;
+	font-family: Verdana;
+}
+#entrez
+{
+	font-family: Georgia;
+	font-size: 2vw;
+}
+#Question
+{
+	font-style: italic;
+	position: relative;
+	left: 0px;
+	top: -3px;
+}
+#ordinateurs
+{
+	text-shadow: 4px 3px 5px red;
+}
+#apple
+{
+	display: block;
+	background-color: rgba(0, 0, 0, 0);
+	height: 100px;
+	width: 100px;
+	position: relative;
+	left: 880px;
+	top: -360px;
+}
+#ikea
+{
+	display: block;
+	background-color: rgba(0, 0, 0, 0);
+	height: 70px;
+	width: 70px;
+	position: relative;
+	left: 470px;
+	top: -450px;
+}
