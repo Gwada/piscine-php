@@ -3,6 +3,7 @@
 	if ($argc < 2)
 		return ;
 	$i = 0;
+	$str = "";
 	while (++$i < $argc)
 		$str .= " ".$argv[$i]." ";
 	$str = trim($str);
