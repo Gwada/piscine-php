@@ -1,0 +1,129 @@
+#page
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#pic
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	max-height: 20%;
+}
+img
+{
+	width: 80%;
+	margin: auto;
+	display: block;
+	max-width: 600px;
+	min-width: 60px;
+}
+#period
+{
+	display: flex;
+	max-height: 79%;
+	max-width: 98%;
+	font-size: 2vw;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+td:hover
+{
+	color: olive;
+	font-style: italic;
+	border: 1px dashed white;
+	background-color: white;
+}
+table
+{
+	width: 100%;
+	margin: auto;
+}
+caption
+{
+	background-color: olive;
+	width: auto;
+	font-size: 4vw;
+	border-radius: 15px;
+	border: 0.4vw solid black;
+}
+.num
+{
+	padding: 0.5%;
+	font-size: 1vw;
+	text-align: left;
+}
+.sym
+{
+	font-style: bold;
+	font-size: 2vw;
+	text-align: center;
+}
+.ato
+{
+	padding: 0.5%;
+	font-size: 1vw;
+	text-align: right;
+}
+.non_met
+{
+	background-color: olive;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.met_alc
+{
+	background-color: maroon;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.alc_ter
+{
+	background-color: teal;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.met
+{
+	background-color: silver;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.met_pau
+{
+	background-color: gray;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.meta
+{
+	background-color: green;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.hal
+{
+	background-color: yellow;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.gaz_nob
+{
+	background-color: cyan;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.lan
+{
+	background-color: fuchsia;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
+.act
+{
+	background-color: purple;
+	border-radius: 10px;
+	border: 0.1vw solid black;
+}
