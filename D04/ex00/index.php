@@ -1,7 +1,8 @@
 <?PHP
 	session_start();
-	if (isset($_GET['login']) AND !empty($_GET['login']) AND isset($_GET['passwd'])
-	AND !empty($_GET['passwd']) AND ($_GET['submit'] AND $_GET['submit'] === "OK"))
+	if (isset($_GET['login']) AND !empty($_GET['login'])
+	AND isset($_GET['passwd']) AND !empty($_GET['passwd'])
+	AND $_GET['submit'] AND $_GET['submit'] === "OK")
 	{
 		$_SESSION['login'] = $_GET['login'];
 		$_SESSION['passwd'] = $_GET['passwd'];

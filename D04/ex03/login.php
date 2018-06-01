@@ -5,10 +5,7 @@ if (isset($_GET['login']) && $_GET['login'] != NULL && isset($_GET['passwd']) &&
 {
 	$_SESSION['login'] = $_GET['login'];
 	$_SESSION['passwd'] = $_GET['passwd'];
-	if (auth($_SESSION['login'], $_SESSION['passwd']) == TRUE)
-		echo "OK\n";
-	else
-		echo "ERROR\n";
+	echo (auth($_SESSION['login'], $_SESSION['passwd']) == TRUE) ? "OK\n" : "ERROR\n";
 }
 else
 {
