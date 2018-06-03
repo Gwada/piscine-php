@@ -47,8 +47,13 @@
 		else
 			echo '<p class="valid"> Hello <a href="http://localhost:8100/rush00/index.php">'.$_SESSION['login'].'</p><br/>';
 		echo '</div>';
-
-	}?>
+	}
+	if ($_SESSION['page'] === 'srcs/admin.php')
+	{
+		echo '<p>'.$_SESSION['user_msg'].'</p>';
+		$_SESSION['user_msg'] = "";
+	}
+	?>
 	<div id="menu">
 		<ul><?php
 

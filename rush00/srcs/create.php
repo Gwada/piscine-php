@@ -1,7 +1,6 @@
 <?PHP
 	session_start();
 
-	echo "tewvafgvfesv";
 	if (isset($_POST) AND isset($_POST['login']) AND $_POST['login'] != 'login'
 	AND isset($_POST['passwd']) AND $_POST['passwd'] != 'passwd'
 	AND isset($_POST['submit']) AND $_POST['submit'] === 'Terminer')
