@@ -53,21 +53,21 @@
 		<ul><?php
 
 			if ($_SESSION['login'] != 'admin')
-		echo 	'<li><a href="#">Sandwichs</a>
+		echo 	'<li><a href="">Tapis</a>
 					<ul>
 						<li><a href="#">Poulet crudités</a></li>
 						<li><a href="#">Jambon fromage</a></li>
 						<li><a href="#">Saumon</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Boissons</a>
+				<li><a href="#">Accessoire</a>
 					<ul>
 						<li><a href="#">Coca-Cola</a></li>
 						<li><a href="#">Fanta</a></li>
 						<li><a href="#">Sprite</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Dessetrs</a>
+				<li><a href="#">Vetements</a>
 					<ul>
 						<li><a href="#">Cookie</a></li>
 						<li><a href="#">Cake chocolat</a></li>
