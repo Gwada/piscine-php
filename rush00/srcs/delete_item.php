@@ -1,8 +1,7 @@
 <?php
-
 	session_start(); 
 
-	if (isset($_POST) AND isset($_POST['reference']) AND isset($_POST['name']) AND isset($_POST['couleur']) AND isset($_POST['prix']) AND isset($_POST['quantite']) AND isset($_POST['categorie']))
+	if (isset($_POST) AND isset($_POST['reference']) AND isset($_POST['quantite']))
 	{
 		include("dbConnection.php");
 		include ("auth.php");
@@ -12,23 +11,23 @@
 
 		$queryAllItems = "SELECT * FROM items";
 		$allItems = mysqli_query($connection, $queryAllItems);
-		$exists = false;
 		while ($row = mysqli_fetch_array($allItems, MYSQLI_ASSOC))
-		{
 			if ($row['reference'] == $_POST['reference'])
 			{
-				$exists = true;
+				if($_POST['quantite'] >= $row['quantite'])
+					$queryDelItem = "DELETE FROM items WHERE reference ='".$_POST['reference']."'";
+				else
+				{
+					$row['quantite'] -= $_POST['quantite'];
+					$queryDelItem = "UPDATE items SET quantite ='".$row['quantite']."' WHERE reference='".$row['reference']."'";
+				}
+				mysqli_query($connection, $queryDelItem);
 				break ;
 			}
-		}
-		if(!$exists)
-		{
-			$queryAddItems = "INSERT INTO items (reference, name, couleur, prix, quantite, categorie) VALUES ('".$_POST['reference']."', '".$_POST['name']."', '".$_POST['couleur']."', '".$_POST['prix']."', '".$_POST['quantite']."', '".$_POST['categorie']."')";
-			mysqli_query($connection, $queryAddItems);
-		}
-		mysqli_free_result($allItems);
+		mysqli_free_result($item);
 		mysqli_close($connection);
 	}
+
 	if ($_SESSION['page2'] == 'srcs/admin.php')
 		header('Location: http://localhost:8100/rush00/srcs/admin.php');
 	else
