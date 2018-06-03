@@ -3,7 +3,7 @@
 	{
 		$dbhost = "localhost";
 		$dbuser = "root";
-		$dbpass = "dlavaury";
+		$dbpass = "password";
 
 		$connection = mysqli_connect($dbhost, $dbuser, $dbpass) or die('error querying server');
 		return $connection;
@@ -13,7 +13,7 @@
 	{
 		$dbhost = "localhost";
 		$dbuser = "root";
-		$dbpass = "dlavaury";
+		$dbpass = "password";
 		$dbname = "fly_carpet";
 
 		$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die('error querying database');

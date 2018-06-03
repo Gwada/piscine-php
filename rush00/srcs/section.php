@@ -2,6 +2,7 @@
 	<?php
 
 		array_key_exists("ITEM", $_POST) ? $_SESSION["ITEM"] = $_POST["ITEM"] : $_SESSION["USERS"] = $_POST["USERS"];
+		$path = ($_SESSION['page'] == 'index.php' ? "./srcs/" : "./");
 
 		if (isset($_SESSION['page2']) AND $_SESSION['page2'] == "srcs/admin.php")
 		{
@@ -9,8 +10,23 @@
 			{
 				if ($_POST['ITEM'] != "STK")
 				{
-					echo '<form action="#" method="post" >';
+					if ($_POST["ITEM"] == "ADD")
+						$path .= "create_item.php";
+					else if ($_POST["ITEM"] == "DEL")
+						$path .= "up_item.php";
+					else if ($_POST["ITEM"] == "DEL")
+						$path .= "del_item.php";
+					
+					if ($_POST["ITEM"] == "ADD")
+						include("localhost:8100/rush00/srcs/create_item.php");
+					else if ($_POST["ITEM"] == "MOD")
+						include("localhost:8100/rush00/srcs/up_item.php");
+					else if ($_POST["ITEM"] == "DEL")
+						include("localhost:8100/rush00/srcs/del_item.php");
+
+					echo '<form action='.$path.' method="post" >';
 					echo '<fieldset>';
+					echo $path;
 
 					if ($_POST['ITEM'] == 'ADD')
 						echo '<legend> Ajout de produits </legend>';
@@ -25,7 +41,6 @@
 					echo 'Prix: <input type="text" name="prix" size="25" required/><br />';
 					echo 'Quantite: <input type="text" name="quantite" size="25" required/><br />';
 					echo 'Categorie: <input type="text" name="categorie" size="25" maxlength="31" required/><br />';
-					echo 'Link: <input type="text" name="categorie" size="25" maxlength="512" required/><br />';
 					echo '</fieldset>';
 					echo '<p><input type="submit" value="Envoyer" />';
 					echo '<input type="reset" value="Annuler" /></p>';
@@ -36,10 +51,14 @@
 			}
 			if (isset($_POST["USERS"]))
 			{
-				$path = ($_SESSION['page'] == 'index.php' ? "./srcs/" : "./");
 				if ($_POST["USERS"] == "ADD")
 				{
 					$path .= "create.php";
+				else if ($_POST["USERS"] == "DEL")
+					$path .= "up_user.php";
+				else if ($_POST["USERS"] == "DEL")
+					$path .= "del_user.php";
+				if ($_POST["USERS"] == "ADD")
 					include("localhost:8100/rush00/srcs/create.php");
 				}
 				else if ($_POST["USERS"] == "MOD")
